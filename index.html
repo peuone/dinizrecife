@@ -342,47 +342,50 @@
         const options = {
             'visao-simples': {
                 types: [
-                    { name: 'Convencional', img: 'pictures/vsconvencional.png', desc: 'Lentes tradicionais com tecnologia básica.' },
-                    { name: 'Digital', img: 'pictures/vsdigital.png', desc: 'Lentes com design digital para maior precisão.' },
-                    { name: 'Freeform', img: 'pictures/vsfreeform.png', desc: 'Lentes personalizadas com tecnologia avançada.' }
+                    { name: 'Convencional', img: 'pictures/vsconvencional.png', desc: 'Lentes tradicionais com tecnologia básica para correção de problemas de visão.' },
+                    { name: 'Digital', img: 'pictures/vsdigital.png', desc: 'Lentes com design digital para maior precisão e conforto visual.' },
+                    { name: 'Freeform', img: 'pictures/vsfreeform.png', desc: 'Lentes personalizadas com tecnologia avançada para máxima performance visual.' }
                 ],
                 versions: [
-                    { name: 'Zeiss Myocare', img: 'pictures/zeiss-myocare.png', desc: 'Lentes especialmente desenvolvidas para crianças e adolescentes' },
-                    { name: 'Zeiss Kids', img: 'pictures/zeiss-kids.png', desc: 'Lentes resistentes e seguras para crianças' },
-                    { name: 'Zeiss SmartLife Young', img: 'pictures/zeiss-smartlife-young.png', desc: 'Lentes para jovens com estilo de vida digital' },
-                    { name: 'Zeiss Minerais', img: 'pictures/zeiss-minerais.png', desc: 'Lentes com materiais minerais de alta qualidade' },
-                    { name: 'Zeiss Light 2', img: 'pictures/zeiss-light2.png', desc: 'Lentes finas e leves com tecnologia avançada' },
-                    { name: 'Zeiss SmartLife', img: 'pictures/zeiss-smartlife.png', desc: 'Lentes para o estilo de vida digital moderno' },
-                    { name: 'Zeiss SmartLife Individual 3', img: 'pictures/zeiss-smartlife-individual.png', desc: 'Lentes personalizadas para máxima performance visual' },
-                    { name: 'Lente Pronta Zeiss ClearView', img: 'pictures/zeiss-clearview.png', desc: 'Lentes prontas com qualidade Zeiss' },
-                    { name: 'Lente Pronta Myocare', img: 'pictures/myocare-pronta.png', desc: 'Lentes prontas especialmente para crianças' }
+                    { name: 'Zeiss Myocare', img: 'pictures/zeiss-myocare.png', desc: 'Tecnologia exclusiva para controle da miopia em crianças e adolescentes, com eficácia comprovada.' },
+                    { name: 'Zeiss Kids', img: 'pictures/zeiss-kids.png', desc: 'Lentes ultra-resistentes e seguras, desenvolvidas especialmente para o estilo de vida ativo das crianças.' },
+                    { name: 'Zeiss SmartLife Young', img: 'pictures/zeiss-smartlife-young.png', desc: 'Proteção digital avançada para jovens conectados, reduzindo a fadiga ocular.' },
+                    { name: 'Zeiss Minerais', img: 'pictures/zeiss-minerais.png', desc: 'Lentes minerais de alta qualidade óptica com excelente resistência a arranhões.' },
+                    { name: 'Zeiss Light 2', img: 'pictures/zeiss-light2.png', desc: 'Tecnologia de ponta para lentes extremamente finas e leves, com máxima precisão.' },
+                    { name: 'Zeiss SmartLife', img: 'pictures/zeiss-smartlife.png', desc: 'Solução completa para o estilo de vida digital moderno, com proteção contra luz azul.' },
+                    { name: 'Zeiss SmartLife Individual 3', img: 'pictures/zeiss-smartlife-individual.png', desc: 'Personalização máxima para necessidades visuais específicas e alta performance.' },
+                    { name: 'Lente Pronta Zeiss ClearView', img: 'pictures/zeiss-clearview.png', desc: 'Lentes prontas com qualidade Zeiss para entrega rápida e excelente desempenho visual.' },
+                    { name: 'Lente Pronta Myocare', img: 'pictures/myocare-pronta.png', desc: 'Solução pronta para controle da miopia em crianças, com tecnologia comprovada.' }
                 ],
                 fotossensivel: ['Sim', 'Não'],
                 antirreflexo: {
                     'Convencional': ['Sem Antirreflexo', 'Anti Reflexo Verde', 'Anti Reflexo Azul', 'Coloração'],
                     'Digital': ['Sem Antirreflexo', 'Anti Reflexo Verde', 'Anti Reflexo Azul', 'Coloração'],
                     'Freeform': ['Sem Antirreflexo', 'Duravision Chrome', 'Duravision Silver', 'Duravision Platinum', 'Coloração'],
-                    'Lente Pronta Myocare': ['Duravision Platinum']
+                    'Lente Pronta Myocare': ['Duravision Platinum'],
+                    'Lente Pronta Zeiss ClearView': ['Duravision Chrome', 'Duravision Silver', 'Duravision Platinum'],
+                    'Zeiss Myocare': ['Duravision Platinum'],
+                    'Zeiss Kids': ['Duravision Platinum']
                 }
             },
             'multifocais': {
                 types: [
-                    { name: 'Convencional', img: 'pictures/convencional.png', desc: 'Lentes multifocais tradicionais.' },
-                    { name: 'Digital', img: 'pictures/digital.png', desc: 'Multifocais com design digital.' },
-                    { name: 'Freeform', img: 'pictures/freeform.png', desc: 'Multifocais personalizadas com tecnologia avançada.' }
+                    { name: 'Convencional', img: 'pictures/convencional.png', desc: 'Lentes multifocais tradicionais para visão em todas as distâncias.' },
+                    { name: 'Digital', img: 'pictures/digital.png', desc: 'Multifocais com design digital para transição suave entre os campos visuais.' },
+                    { name: 'Freeform', img: 'pictures/freeform.png', desc: 'Multifocais personalizadas com tecnologia avançada para adaptação rápida.' }
                 ],
                 versions: [
-                    { name: 'Zeiss GT2', img: 'pictures/zeiss-gt2.png', desc: 'Conforto visual básico com tecnologia Zeiss' },
-                    { name: 'Zeiss Light', img: 'pictures/zeiss-light.png', desc: 'Lentes leves com fácil adaptação' },
-                    { name: 'Zeiss Light 2 D', img: 'pictures/zeiss-light2d.png', desc: 'Versão digital com melhor distribuição de campos' },
-                    { name: 'Zeiss Light 2 3D', img: 'pictures/zeiss-light2-3d.png', desc: 'Tecnologia 3D para melhor percepção de profundidade' },
-                    { name: 'Zeiss Choice', img: 'pictures/zeiss-choice.png', desc: 'Solução balanceada para diversos estilos de vida' },
-                    { name: 'Zeiss Light 2 3DV', img: 'pictures/zeiss-light2-3dv.png', desc: 'Versão premium com tecnologia 3D avançada' },
-                    { name: 'Zeiss SmartLife Essencial', img: 'pictures/zeiss-smartlife-essencial.png', desc: 'Para necessidades visuais básicas no mundo digital' },
-                    { name: 'Zeiss SmartLife Pure', img: 'pictures/zeiss-smartlife-pure.png', desc: 'Proteção contra luz azul nociva' },
-                    { name: 'Zeiss SmartLife Plus', img: 'pictures/zeiss-smartlife-plus.png', desc: 'Performance visual aprimorada para dispositivos digitais' },
-                    { name: 'Zeiss SmartLife Superb', img: 'pictures/zeiss-smartlife-superb.png', desc: 'Alta performance para usuários intensivos de tecnologia' },
-                    { name: 'Zeiss SmartLife Individual 3', img: 'pictures/zeiss-smartlife-individual.png', desc: 'Solução personalizada máxima para visão digital' }
+                    { name: 'Zeiss GT2', img: 'pictures/zeiss-gt2.png', desc: 'Conforto visual básico com tecnologia Zeiss para necessidades multifocais simples.' },
+                    { name: 'Zeiss Light', img: 'pictures/zeiss-light.png', desc: 'Lentes leves com fácil adaptação e campos visuais equilibrados.' },
+                    { name: 'Zeiss Light 2 D', img: 'pictures/zeiss-light2d.png', desc: 'Versão digital com melhor distribuição de campos visuais.' },
+                    { name: 'Zeiss Light 2 3D', img: 'pictures/zeiss-light2-3d.png', desc: 'Tecnologia 3D para melhor percepção de profundidade e conforto visual.' },
+                    { name: 'Zeiss Choice', img: 'pictures/zeiss-choice.png', desc: 'Solução balanceada para diversos estilos de vida e necessidades visuais.' },
+                    { name: 'Zeiss Light 2 3DV', img: 'pictures/zeiss-light2-3dv.png', desc: 'Versão premium com tecnologia 3D avançada para máxima performance.' },
+                    { name: 'Zeiss SmartLife Essencial', img: 'pictures/zeiss-smartlife-essencial.png', desc: 'Para necessidades visuais básicas no mundo digital.' },
+                    { name: 'Zeiss SmartLife Pure', img: 'pictures/zeiss-smartlife-pure.png', desc: 'Proteção especializada contra luz azul nociva de dispositivos digitais.' },
+                    { name: 'Zeiss SmartLife Plus', img: 'pictures/zeiss-smartlife-plus.png', desc: 'Performance visual aprimorada para usuários intensivos de tecnologia.' },
+                    { name: 'Zeiss SmartLife Superb', img: 'pictures/zeiss-smartlife-superb.png', desc: 'Alta performance visual para profissionais que exigem o máximo.' },
+                    { name: 'Zeiss SmartLife Individual 3', img: 'pictures/zeiss-smartlife-individual.png', desc: 'Solução personalizada máxima para visão digital e multifocal.' }
                 ],
                 fotossensivel: ['Sim', 'Não'],
                 antirreflexo: {
@@ -393,9 +396,9 @@
             },
             'bifocais': {
                 types: [
-                    { name: 'Convencional', img: 'pictures/vsconvencional.png', desc: 'Lentes bifocais tradicionais.' },
-                    { name: 'Digital', img: 'pictures/vsdigital.png', desc: 'Bifocais com design digital.' },
-                    { name: 'Freeform', img: 'pictures/vsfreeform.png', desc: 'Bifocais personalizadas com tecnologia avançada.' }
+                    { name: 'Convencional', img: 'pictures/vsconvencional.png', desc: 'Lentes bifocais tradicionais com transição visível para perto e longe.' },
+                    { name: 'Digital', img: 'pictures/vsdigital.png', desc: 'Bifocais com design digital para transição mais suave entre os campos.' },
+                    { name: 'Freeform', img: 'pictures/vsfreeform.png', desc: 'Bifocais personalizadas com tecnologia avançada para melhor adaptação.' }
                 ],
                 categories: ['Ultex', 'Panoptik', 'Kriptok', 'Executive'],
                 fotossensivel: ['Sim', 'Não'],
@@ -704,28 +707,102 @@
 
         function showIndiceRefracaoSelection() {
             const step6 = document.getElementById('step6');
-            step6.innerHTML = `
-                <h3>Escolha o Índice de Refração:</h3>
-                <div class="options-grid">
-                    ${options['indice-refracao'].map(item => `
-                        <div class="option-card" onclick="selectIndiceRefracao('${item.name}')">
-                            ${item.badgeClass ? `<span class="badge ${item.badgeClass}">${item.name.split(' ')[0]}</span>` : ''}
-                            <img src="${item.img}" alt="${item.name}">
-                            <h4>${item.name}</h4>
-                            <p>${item.desc}</p>
+            
+            // Se for Myocare Pronta, mostrar apenas Poli
+            if (currentSelection.versao === 'Lente Pronta Myocare') {
+                const poliOption = options['indice-refracao'].find(item => item.name.includes('Policarbonato'));
+                
+                step6.innerHTML = `
+                    <h3>Índice de Refração para Myocare Pronta:</h3>
+                    <div class="options-grid">
+                        <div class="option-card" onclick="selectIndiceRefracao('${poliOption.name}')">
+                            <span class="badge ${poliOption.badgeClass}">${poliOption.name.split(' ')[0]}</span>
+                            <img src="${poliOption.img}" alt="${poliOption.name}">
+                            <h4>${poliOption.name}</h4>
+                            <p>${poliOption.desc}</p>
                         </div>
-                    `).join('')}
-                </div>
-                <div class="navigation-buttons">
-                    <button class="back-button" onclick="goBack()">Voltar</button>
-                </div>
-            `;
+                    </div>
+                    <div class="navigation-buttons">
+                        <button class="back-button" onclick="goBack()">Voltar</button>
+                    </div>
+                `;
+            } 
+            // Se for Zeiss Kids, mostrar apenas Poli
+            else if (currentSelection.versao === 'Zeiss Kids') {
+                const poliOption = options['indice-refracao'].find(item => item.name.includes('Policarbonato'));
+                
+                step6.innerHTML = `
+                    <h3>Índice de Refração para Zeiss Kids:</h3>
+                    <div class="options-grid">
+                        <div class="option-card" onclick="selectIndiceRefracao('${poliOption.name}')">
+                            <span class="badge ${poliOption.badgeClass}">${poliOption.name.split(' ')[0]}</span>
+                            <img src="${poliOption.img}" alt="${poliOption.name}">
+                            <h4>${poliOption.name}</h4>
+                            <p>${poliOption.desc}</p>
+                        </div>
+                    </div>
+                    <div class="navigation-buttons">
+                        <button class="back-button" onclick="goBack()">Voltar</button>
+                    </div>
+                `;
+            }
+            // Se for Zeiss Myocare, mostrar Poli e Alto Índice
+            else if (currentSelection.versao === 'Zeiss Myocare') {
+                const allowedOptions = options['indice-refracao'].filter(item => 
+                    item.name.includes('Policarbonato') || item.name.includes('Alto Índice')
+                );
+                
+                step6.innerHTML = `
+                    <h3>Índice de Refração para Myocare:</h3>
+                    <div class="options-grid">
+                        ${allowedOptions.map(item => `
+                            <div class="option-card" onclick="selectIndiceRefracao('${item.name}')">
+                                ${item.badgeClass ? `<span class="badge ${item.badgeClass}">${item.name.split(' ')[0]}</span>` : ''}
+                                <img src="${item.img}" alt="${item.name}">
+                                <h4>${item.name}</h4>
+                                <p>${item.desc}</p>
+                            </div>
+                        `).join('')}
+                    </div>
+                    <div class="navigation-buttons">
+                        <button class="back-button" onclick="goBack()">Voltar</button>
+                    </div>
+                `;
+            } else {
+                // Mostrar todas as opções normalmente
+                step6.innerHTML = `
+                    <h3>Escolha o Índice de Refração:</h3>
+                    <div class="options-grid">
+                        ${options['indice-refracao'].map(item => `
+                            <div class="option-card" onclick="selectIndiceRefracao('${item.name}')">
+                                ${item.badgeClass ? `<span class="badge ${item.badgeClass}">${item.name.split(' ')[0]}</span>` : ''}
+                                <img src="${item.img}" alt="${item.name}">
+                                <h4>${item.name}</h4>
+                                <p>${item.desc}</p>
+                            </div>
+                        `).join('')}
+                    </div>
+                    <div class="navigation-buttons">
+                        <button class="back-button" onclick="goBack()">Voltar</button>
+                    </div>
+                `;
+            }
+            
             navigateTo('step6');
         }
 
         function selectIndiceRefracao(indice) {
             currentSelection.indiceRefracao = indice;
-            showFotossensivelSelection();
+            
+            // Pular etapa de fotossensível para Myocare, Myocare Pronta ou ClearView com Poli
+            if (currentSelection.versao === 'Zeiss Myocare' || 
+                currentSelection.versao === 'Lente Pronta Myocare' ||
+                currentSelection.versao === 'Zeiss Kids' ||
+                (currentSelection.versao === 'Lente Pronta Zeiss ClearView' && indice.includes('Policarbonato'))) {
+                showAntirreflexoSelection();
+            } else {
+                showFotossensivelSelection();
+            }
         }
 
         function showFotossensivelSelection() {
@@ -736,8 +813,11 @@
                 return;
             }
 
+            // Alterar o nome para "PhotoFusion X" nas categorias Freeform
+            const title = (currentSelection.type === 'Freeform') ? 'PhotoFusion X' : 'Fotossensível';
+
             step7.innerHTML = `
-                <h3>Tratamento Fotossensível:</h3>
+                <h3>Tratamento ${title}:</h3>
                 <div class="options-grid">
                     ${options[currentSelection.category].fotossensivel.map(opt => `
                         <div class="option-card" onclick="selectFotossensivel('${opt}')">
@@ -764,10 +844,24 @@
             
             let antirreflexoOptions;
             
-            // Verifica se é uma lente pronta Myocare
-            if (currentSelection.versao === 'Lente Pronta Myocare') {
+            // Verifica se é uma lente pronta Myocare ou Zeiss Kids
+            if (currentSelection.versao === 'Lente Pronta Myocare' || currentSelection.versao === 'Zeiss Kids') {
                 antirreflexoOptions = ['Duravision Platinum'];
             } 
+            // Verifica se é Zeiss Myocare
+            else if (currentSelection.versao === 'Zeiss Myocare') {
+                antirreflexoOptions = ['Duravision Platinum'];
+            }
+            // Verifica se é ClearView
+            else if (currentSelection.versao === 'Lente Pronta Zeiss ClearView') {
+                // Remover "Sem Antirreflexo" conforme solicitado
+                antirreflexoOptions = ['Duravision Chrome', 'Duravision Silver', 'Duravision Platinum'];
+                
+                // Se fotossensível for 'Sim', remover Silver (regra adicional)
+                if (currentSelection.fotossensivel === 'Sim') {
+                    antirreflexoOptions = antirreflexoOptions.filter(opt => opt !== 'Duravision Silver');
+                }
+            }
             // Verifica se é Freeform (visão simples ou multifocal)
             else if (currentSelection.type === 'Freeform' && 
                     (currentSelection.category === 'visao-simples' || currentSelection.category === 'multifocais')) {
@@ -844,7 +938,17 @@
             if (currentSelection.versao) whatsappMessage += `*Versão:* ${currentSelection.versao}\n`;
             if (currentSelection.bifocalCategory) whatsappMessage += `*Categoria Bifocal:* ${currentSelection.bifocalCategory}\n`;
             whatsappMessage += `*Índice de Refração:* ${currentSelection.indiceRefracao}\n`;
-            whatsappMessage += `*Fotossensível:* ${currentSelection.fotossensivel}\n`;
+            
+            // Mostrar fotossensível apenas se não for Myocare, Kids ou ClearView com Poli
+            if (!(currentSelection.versao === 'Zeiss Myocare' || 
+                  currentSelection.versao === 'Lente Pronta Myocare' ||
+                  currentSelection.versao === 'Zeiss Kids' ||
+                  (currentSelection.versao === 'Lente Pronta Zeiss ClearView' && currentSelection.indiceRefracao.includes('Policarbonato')))) {
+                // Usar "PhotoFusion X" para Freeform
+                const label = (currentSelection.type === 'Freeform') ? 'PhotoFusion X' : 'Fotossensível';
+                whatsappMessage += `*${label}:* ${currentSelection.fotossensivel}\n`;
+            }
+            
             whatsappMessage += `*Antirreflexo:* ${currentSelection.antirreflexo}\n`;
             
             if (currentSelection.receitaMedica === 'Não') {
@@ -865,7 +969,13 @@
                 ${currentSelection.versao ? `<p><strong>Versão:</strong> ${currentSelection.versao}</p>` : ''}
                 ${currentSelection.bifocalCategory ? `<p><strong>Categoria Bifocal:</strong> ${currentSelection.bifocalCategory}</p>` : ''}
                 <p><strong>Índice de Refração:</strong> ${currentSelection.indiceRefracao}</p>
-                <p><strong>Fotossensível:</strong> ${currentSelection.fotossensivel}</p>
+                
+                ${!(currentSelection.versao === 'Zeiss Myocare' || 
+                   currentSelection.versao === 'Lente Pronta Myocare' ||
+                   currentSelection.versao === 'Zeiss Kids' ||
+                   (currentSelection.versao === 'Lente Pronta Zeiss ClearView' && currentSelection.indiceRefracao.includes('Policarbonato'))) ? 
+                   `<p><strong>${currentSelection.type === 'Freeform' ? 'PhotoFusion X' : 'Fotossensível'}:</strong> ${currentSelection.fotossensivel}</p>` : ''}
+                
                 <p><strong>Antirreflexo:</strong> ${currentSelection.antirreflexo}</p>
                 
                 <div class="observations">
@@ -920,7 +1030,17 @@
             if (currentSelection.versao) whatsappMessage += `*Versão:* ${currentSelection.versao}\n`;
             if (currentSelection.bifocalCategory) whatsappMessage += `*Categoria Bifocal:* ${currentSelection.bifocalCategory}\n`;
             whatsappMessage += `*Índice de Refração:* ${currentSelection.indiceRefracao}\n`;
-            whatsappMessage += `*Fotossensível:* ${currentSelection.fotossensivel}\n`;
+            
+            // Mostrar fotossensível apenas se não for Myocare, Kids ou ClearView com Poli
+            if (!(currentSelection.versao === 'Zeiss Myocare' || 
+                  currentSelection.versao === 'Lente Pronta Myocare' ||
+                  currentSelection.versao === 'Zeiss Kids' ||
+                  (currentSelection.versao === 'Lente Pronta Zeiss ClearView' && currentSelection.indiceRefracao.includes('Policarbonato')))) {
+                // Usar "PhotoFusion X" para Freeform
+                const label = (currentSelection.type === 'Freeform') ? 'PhotoFusion X' : 'Fotossensível';
+                whatsappMessage += `*${label}:* ${currentSelection.fotossensivel}\n`;
+            }
+            
             whatsappMessage += `*Antirreflexo:* ${currentSelection.antirreflexo}\n`;
             
             if (currentSelection.receitaMedica === 'Não') {
