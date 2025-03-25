@@ -18,6 +18,7 @@
             --resina-color: #4CAF50;
             --policarbonato-color: #2196F3;
             --alto-indice-color: #9C27B0;
+            --zeiss-blue: #0082C3;
         }
 
         body {
@@ -110,6 +111,11 @@
 
         .alto-indice-badge {
             background-color: var(--alto-indice-color);
+            color: white;
+        }
+
+        .zeiss-badge {
+            background-color: var(--zeiss-blue);
             color: white;
         }
 
@@ -340,8 +346,24 @@
                     { name: 'Digital', img: 'pictures/vsdigital.png', desc: 'Lentes com design digital para maior precisão.' },
                     { name: 'Freeform', img: 'pictures/vsfreeform.png', desc: 'Lentes personalizadas com tecnologia avançada.' }
                 ],
+                versions: [
+                    { name: 'Zeiss Myocare', img: 'pictures/zeiss-myocare.png', desc: 'Lentes especialmente desenvolvidas para crianças e adolescentes' },
+                    { name: 'Zeiss Kids', img: 'pictures/zeiss-kids.png', desc: 'Lentes resistentes e seguras para crianças' },
+                    { name: 'Zeiss SmartLife Young', img: 'pictures/zeiss-smartlife-young.png', desc: 'Lentes para jovens com estilo de vida digital' },
+                    { name: 'Zeiss Minerais', img: 'pictures/zeiss-minerais.png', desc: 'Lentes com materiais minerais de alta qualidade' },
+                    { name: 'Zeiss Light 2', img: 'pictures/zeiss-light2.png', desc: 'Lentes finas e leves com tecnologia avançada' },
+                    { name: 'Zeiss SmartLife', img: 'pictures/zeiss-smartlife.png', desc: 'Lentes para o estilo de vida digital moderno' },
+                    { name: 'Zeiss SmartLife Individual 3', img: 'pictures/zeiss-smartlife-individual.png', desc: 'Lentes personalizadas para máxima performance visual' },
+                    { name: 'Lente Pronta Zeiss ClearView', img: 'pictures/zeiss-clearview.png', desc: 'Lentes prontas com qualidade Zeiss' },
+                    { name: 'Lente Pronta Myocare', img: 'pictures/myocare-pronta.png', desc: 'Lentes prontas especialmente para crianças' }
+                ],
                 fotossensivel: ['Sim', 'Não'],
-                antirreflexo: ['Sem Antirreflexo', 'Verde', 'Azul', 'Solar']
+                antirreflexo: {
+                    'Convencional': ['Sem Antirreflexo', 'Anti Reflexo Verde', 'Anti Reflexo Azul', 'Coloração'],
+                    'Digital': ['Sem Antirreflexo', 'Anti Reflexo Verde', 'Anti Reflexo Azul', 'Coloração'],
+                    'Freeform': ['Sem Antirreflexo', 'Duravision Chrome', 'Duravision Silver', 'Duravision Platinum', 'Coloração'],
+                    'Lente Pronta Myocare': ['Duravision Platinum']
+                }
             },
             'multifocais': {
                 types: [
@@ -350,17 +372,23 @@
                     { name: 'Freeform', img: 'pictures/freeform.png', desc: 'Multifocais personalizadas com tecnologia avançada.' }
                 ],
                 versions: [
-                    { name: 'DMAX GO', img: 'pictures/dmaxgo.png', desc: 'Conforto e Nitidez com Preço Acessível' },
-                    { name: 'DMAX LIGHT', img: 'pictures/dmaxlight.png', desc: 'Versatilidade, Fácil Adaptação e Equilíbrio entre os Campos' },
-                    { name: 'DMAX SMART', img: 'pictures/dmaxsmart.png', desc: 'Distribuição Balanceada, Melhor Custo-benefício' },
-                    { name: 'DMAX TOP', img: 'pictures/dmaxtop.png', desc: 'Conforto Superior, Alta Tecnologia, Nitidez Excelente' },
-                    { name: 'DMAX INFINITY', img: 'pictures/dmaxinfinity.png', desc: 'Tecnologia de Ponta, Máxima Personalização' }
+                    { name: 'Zeiss GT2', img: 'pictures/zeiss-gt2.png', desc: 'Conforto visual básico com tecnologia Zeiss' },
+                    { name: 'Zeiss Light', img: 'pictures/zeiss-light.png', desc: 'Lentes leves com fácil adaptação' },
+                    { name: 'Zeiss Light 2 D', img: 'pictures/zeiss-light2d.png', desc: 'Versão digital com melhor distribuição de campos' },
+                    { name: 'Zeiss Light 2 3D', img: 'pictures/zeiss-light2-3d.png', desc: 'Tecnologia 3D para melhor percepção de profundidade' },
+                    { name: 'Zeiss Choice', img: 'pictures/zeiss-choice.png', desc: 'Solução balanceada para diversos estilos de vida' },
+                    { name: 'Zeiss Light 2 3DV', img: 'pictures/zeiss-light2-3dv.png', desc: 'Versão premium com tecnologia 3D avançada' },
+                    { name: 'Zeiss SmartLife Essencial', img: 'pictures/zeiss-smartlife-essencial.png', desc: 'Para necessidades visuais básicas no mundo digital' },
+                    { name: 'Zeiss SmartLife Pure', img: 'pictures/zeiss-smartlife-pure.png', desc: 'Proteção contra luz azul nociva' },
+                    { name: 'Zeiss SmartLife Plus', img: 'pictures/zeiss-smartlife-plus.png', desc: 'Performance visual aprimorada para dispositivos digitais' },
+                    { name: 'Zeiss SmartLife Superb', img: 'pictures/zeiss-smartlife-superb.png', desc: 'Alta performance para usuários intensivos de tecnologia' },
+                    { name: 'Zeiss SmartLife Individual 3', img: 'pictures/zeiss-smartlife-individual.png', desc: 'Solução personalizada máxima para visão digital' }
                 ],
                 fotossensivel: ['Sim', 'Não'],
                 antirreflexo: {
-                    'Convencional': ['Sem Antirreflexo', 'Verde', 'Azul', 'Solar'],
-                    'Digital': ['Sem Antirreflexo', 'Verde', 'Azul', 'Solar'],
-                    'Freeform': ['Sem Antirreflexo', 'Verde', 'Azul', 'Verde Premium', 'Azul Premium', 'Solar']
+                    'Convencional': ['Sem Antirreflexo', 'Anti Reflexo Verde', 'Anti Reflexo Azul', 'Coloração'],
+                    'Digital': ['Sem Antirreflexo', 'Anti Reflexo Verde', 'Anti Reflexo Azul', 'Coloração'],
+                    'Freeform': ['Sem Antirreflexo', 'Duravision Chrome', 'Duravision Silver', 'Duravision Platinum', 'Coloração']
                 }
             },
             'bifocais': {
@@ -371,7 +399,7 @@
                 ],
                 categories: ['Ultex', 'Panoptik', 'Kriptok', 'Executive'],
                 fotossensivel: ['Sim', 'Não'],
-                antirreflexo: ['Sem Antirreflexo', 'Verde', 'Azul', 'Solar']
+                antirreflexo: ['Sem Antirreflexo', 'Anti Reflexo Verde', 'Anti Reflexo Azul', 'Coloração']
             },
             'indice-refracao': [
                 { 
@@ -613,7 +641,7 @@
 
         function selectType(type) {
             currentSelection.type = type;
-            if (currentSelection.category === 'multifocais' && type === 'Freeform') {
+            if ((currentSelection.category === 'multifocais' || currentSelection.category === 'visao-simples') && type === 'Freeform') {
                 showVersionSelection();
             } else if (currentSelection.category === 'bifocais') {
                 showBifocalCategorySelection();
@@ -624,10 +652,13 @@
 
         function showVersionSelection() {
             const step5 = document.getElementById('step5');
+            const versions = currentSelection.category === 'multifocais' ? 
+                options.multifocais.versions : options['visao-simples'].versions;
+                
             step5.innerHTML = `
-                <h3>Selecione a Versão Freeform:</h3>
+                <h3>Selecione a Versão ${currentSelection.type}:</h3>
                 <div class="options-grid">
-                    ${options.multifocais.versions.map(version => `
+                    ${versions.map(version => `
                         <div class="option-card" onclick="selectVersion('${version.name}')">
                             <img src="${version.img}" alt="${version.name}">
                             <h4>${version.name}</h4>
@@ -732,11 +763,27 @@
             const summary = document.getElementById('summary');
             
             let antirreflexoOptions;
-            if (currentSelection.category === 'multifocais') {
-                antirreflexoOptions = options.multifocais.antirreflexo[currentSelection.type] || 
-                                     options.multifocais.antirreflexo['Convencional'];
-            } else {
-                antirreflexoOptions = options[currentSelection.category].antirreflexo;
+            
+            // Verifica se é uma lente pronta Myocare
+            if (currentSelection.versao === 'Lente Pronta Myocare') {
+                antirreflexoOptions = ['Duravision Platinum'];
+            } 
+            // Verifica se é Freeform (visão simples ou multifocal)
+            else if (currentSelection.type === 'Freeform' && 
+                    (currentSelection.category === 'visao-simples' || currentSelection.category === 'multifocais')) {
+                antirreflexoOptions = options[currentSelection.category].antirreflexo['Freeform'];
+            } 
+            // Para todas as outras opções (convencionais, digitais e bifocais)
+            else {
+                if (currentSelection.category === 'multifocais') {
+                    antirreflexoOptions = options.multifocais.antirreflexo[currentSelection.type] || 
+                                         options.multifocais.antirreflexo['Convencional'];
+                } else if (currentSelection.category === 'bifocais') {
+                    antirreflexoOptions = options.bifocais.antirreflexo;
+                } else {
+                    antirreflexoOptions = options['visao-simples'].antirreflexo[currentSelection.type] || 
+                                         options['visao-simples'].antirreflexo['Convencional'];
+                }
             }
 
             summary.innerHTML = `
@@ -745,7 +792,7 @@
                     ${antirreflexoOptions.map(opt => `
                         <div class="option-card" onclick="selectAntirreflexo('${opt}')">
                             <img src="${getAntirreflexoImage(opt)}" alt="${opt}">
-                            <h4>${opt} ${opt.includes('Premium') ? '<span class="badge" style="background: var(--premium-color)">2 anos de garantia</span>' : ''}</h4>
+                            <h4>${opt}</h4>
                             <p>${getAntirreflexoDescription(opt)}</p>
                         </div>
                     `).join('')}
@@ -759,11 +806,12 @@
 
         function getAntirreflexoImage(opt) {
             switch (opt) {
-                case 'Verde': return 'pictures/arverde.png';
-                case 'Azul': return 'pictures/arazul.png';
-                case 'Solar': return 'pictures/antirreflexo-solar.png';
-                case 'Verde Premium': return 'pictures/arverde.png';
-                case 'Azul Premium': return 'pictures/arazul.png';
+                case 'Anti Reflexo Verde': return 'pictures/arverde.png';
+                case 'Anti Reflexo Azul': return 'pictures/arazul.png';
+                case 'Coloração': return 'pictures/coloracao.png';
+                case 'Duravision Chrome': return 'pictures/duravision-chrome.png';
+                case 'Duravision Silver': return 'pictures/duravision-silver.png';
+                case 'Duravision Platinum': return 'pictures/duravision-platinum.png';
                 case 'Sem Antirreflexo': return 'pictures/sem-antirreflexo.png';
                 default: return 'pictures/default.png';
             }
@@ -772,11 +820,12 @@
         function getAntirreflexoDescription(opt) {
             switch (opt) {
                 case 'Sem Antirreflexo': return 'Sem tratamento adicional.';
-                case 'Verde': return 'Proteção contra reflexos e luz intensa.';
-                case 'Azul': return 'Proteção contra a luz azul nociva.';
-                case 'Solar': return 'Lentes solares para proteção UV.';
-                case 'Verde Premium': return 'Proteção premium com durabilidade de 2 anos.';
-                case 'Azul Premium': return 'Proteção premium contra luz azul com 2 anos de garantia.';
+                case 'Anti Reflexo Verde': return 'Proteção contra reflexos e luz intensa.';
+                case 'Anti Reflexo Azul': return 'Proteção contra a luz azul nociva.';
+                case 'Coloração': return 'Lentes com coloração para proteção solar.';
+                case 'Duravision Chrome': return 'Tratamento antirreflexo básico da Zeiss.';
+                case 'Duravision Silver': return 'Tratamento antirreflexo premium com maior durabilidade.';
+                case 'Duravision Platinum': return 'Tratamento antirreflexo top de linha com máxima proteção e durabilidade.';
                 default: return 'Descrição não disponível.';
             }
         }
