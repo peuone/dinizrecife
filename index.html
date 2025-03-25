@@ -353,7 +353,7 @@
                     { name: 'Zeiss Minerais', img: 'pictures/zeiss-minerais.png', desc: 'Lentes minerais de alta qualidade óptica com excelente resistência a arranhões.' },
                     { name: 'Zeiss Light 2', img: 'pictures/zeiss-light2.png', desc: 'Tecnologia de ponta para lentes extremamente finas e leves, com máxima precisão.' },
                     { name: 'Zeiss SmartLife', img: 'pictures/zeiss-smartlife.png', desc: 'Solução completa para o estilo de vida digital moderno, com proteção contra luz azul.' },
-                    { name: 'Zeiss SmartLife Individual 3', img: 'pictures/zeiss-smartlife-individual.png', desc: 'Personalização máxima para necessidades visuais específicas e alta performance.' },
+                    { name: 'VS Zeiss SmartLife Individual 3', img: 'pictures/zeiss-smartlife-individual.png', desc: 'Personalização máxima para necessidades visuais específicas e alta performance em visão simples.' },
                     { name: 'Lente Pronta Zeiss ClearView', img: 'pictures/zeiss-clearview.png', desc: 'Lentes prontas com qualidade Zeiss para entrega rápida e excelente desempenho visual.' },
                     { name: 'Lente Pronta Myocare', img: 'pictures/myocare-pronta.png', desc: 'Solução pronta para controle da miopia em crianças, com tecnologia comprovada.' }
                 ],
@@ -581,7 +581,6 @@
             document.querySelectorAll('.loja-card')[index].classList.add('selected');
             
             // Atualizar link do WhatsApp
-            const whatsappMessage = `Olá, gostaria de agendar uma consulta. Cliente: ${currentSelection.clientName}`;
             const whatsappLink = `https://wa.me/55${currentSelection.selectedLoja.whatsapp}?text=${encodeURIComponent(whatsappMessage)}`;
             
             document.getElementById('whatsapp-link').href = whatsappLink;
@@ -655,8 +654,13 @@
 
         function showVersionSelection() {
             const step5 = document.getElementById('step5');
-            const versions = currentSelection.category === 'multifocais' ? 
+            let versions = currentSelection.category === 'multifocais' ? 
                 options.multifocais.versions : options['visao-simples'].versions;
+            
+            // Remover Zeiss Light das lentes Multifocais Freeform
+            if (currentSelection.category === 'multifocais' && currentSelection.type === 'Freeform') {
+                versions = versions.filter(v => v.name !== 'Zeiss Light');
+            }
                 
             step5.innerHTML = `
                 <h3>Selecione a Versão ${currentSelection.type}:</h3>
@@ -857,8 +861,11 @@
                 // Remover "Sem Antirreflexo" conforme solicitado
                 antirreflexoOptions = ['Duravision Chrome', 'Duravision Silver', 'Duravision Platinum'];
                 
-                // Se fotossensível for 'Sim', remover Silver (regra adicional)
-                if (currentSelection.fotossensivel === 'Sim') {
+                // Se fotossensível for 'Sim' e for Policarbonato, manter Silver (nova regra)
+                if (currentSelection.fotossensivel === 'Sim' && currentSelection.indiceRefracao.includes('Policarbonato')) {
+                    // Manter Silver para Poli mesmo com PhotoFusion
+                } else if (currentSelection.fotossensivel === 'Sim') {
+                    // Remover Silver apenas se não for Poli
                     antirreflexoOptions = antirreflexoOptions.filter(opt => opt !== 'Duravision Silver');
                 }
             }
