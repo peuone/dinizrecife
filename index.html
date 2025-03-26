@@ -251,6 +251,28 @@
             font-size: 0.8em;
             color: var(--text-color);
         }
+        
+        .badge-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+        }
+        
+        .badge-container .badge {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    font-size: 0.9em;
+    padding: 4px 10px;
+        }
+        
+        .option-card img {
+    margin-top: 10px;
+    position: relative;
+    z-index: 1;
+        }
     </style>
 </head>
 <body>
@@ -761,8 +783,10 @@
                     <div class="options-grid">
                         ${allowedOptions.map(item => `
                             <div class="option-card" onclick="selectIndiceRefracao('${item.name}')">
-                                ${item.badgeClass ? `<span class="badge ${item.badgeClass}">${item.name.split(' ')[0]}</span>` : ''}
-                                <img src="${item.img}" alt="${item.name}">
+                                <div class="badge-container">
+    <span class="badge ${item.badgeClass}">${item.name.split(' ')[0]}</span>
+    <img src="${item.img}" alt="${item.name}">
+ </div>
                                 <h4>${item.name}</h4>
                                 <p>${item.desc}</p>
                             </div>
@@ -779,8 +803,10 @@
                     <div class="options-grid">
                         ${options['indice-refracao'].map(item => `
                             <div class="option-card" onclick="selectIndiceRefracao('${item.name}')">
-                                ${item.badgeClass ? `<span class="badge ${item.badgeClass}">${item.name.split(' ')[0]}</span>` : ''}
-                                <img src="${item.img}" alt="${item.name}">
+                                <div class="badge-container">
+                                  <span class="badge ${item.badgeClass}">${item.name.split(' ')[0]}</span>
+                                    <img src="${item.img}" alt="${item.name}">
+                                </div>
                                 <h4>${item.name}</h4>
                                 <p>${item.desc}</p>
                             </div>
